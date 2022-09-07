@@ -1,0 +1,4 @@
+stol,namjestaj,35,70,68,40,100,10,90,12we3
+zobeno brasno,hrana,15,30,8,7,10,10,9,2df4
+lenovo laptop,uređaji,50,30,40,3450,5000,20,4000,245rt
+ananas,hrana,13,25,11,4,12,5,11,36j87

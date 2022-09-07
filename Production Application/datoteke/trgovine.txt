@@ -1,0 +1,3 @@
+Spar;www.spar.hr;zobeno brasno;
+Konzum;www.konzum.hr;stol,zobeno brasno;
+Lidl;www.lidl.hr;lenovo laptop,zobeno brasno;

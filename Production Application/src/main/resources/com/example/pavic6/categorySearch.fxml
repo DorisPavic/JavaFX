@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pavic6.CategorySearchController">
+    <fx:include source="menuBar.fxml" />
+   <GridPane layoutY="23.0" prefHeight="480.0" prefWidth="885.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="304.0" minHeight="10.0" prefHeight="304.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label text="Description:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Name:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Category search" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Georgia Bold" size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="imeKategorijeTextField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="opisKategorijeTextField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TableView fx:id="kategorijaTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+           <columns>
+             <TableColumn fx:id="imeKategorijeTableColumn" prefWidth="232.0" text="Name" />
+             <TableColumn fx:id="opisKategorijeTableColumn" prefWidth="652.0" text="Description" />
+           </columns>
+            <GridPane.margin>
+               <Insets top="20.0" />
+            </GridPane.margin>
+         </TableView>
+         <Button mnemonicParsing="false" onAction="#SearchCategory" text="Search" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Georgia Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </GridPane>
+
+</AnchorPane>

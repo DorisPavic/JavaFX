@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pavic6.ItemAddController">
+    <fx:include source="menuBar.fxml" />
+   <GridPane layoutY="23.0" prefHeight="377.0" prefWidth="885.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="40.0" minHeight="4.0" prefHeight="23.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label text="Add item" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font name="Georgia Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label text="Name:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Category:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Code:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Width:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Height:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Lenght:" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Production cost:" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Selling price:" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#AddItem" text="Add" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+            <font>
+               <Font name="Georgia Bold" size="12.0" />
+            </font>
+         </Button>
+         <TextField fx:id="imeNovogArtiklaTextField" promptText="unesite ime artikla..." GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="sifraNovogArtiklaTextField" promptText="upišite šifru artikla..." GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="sirinaNovogArtiklaTextField" promptText="unesite širinu artikla..." GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="visinaNovogArtiklaTextField" promptText="unesite visinu artikla..." GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="duzinaNovogArtiklaTextField" promptText="unesite dužinu artikla..." GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="cijenaProizvodnjeNovogArtiklaTextField" promptText="unesite cijenu proizvodnje..." GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <TextField fx:id="osnovnaProdajnaCijenaTextField" promptText="unesite osnovnu prodajnu cijenu..." GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+         <ComboBox fx:id="kategorijaNovogArtiklaComboBox" prefHeight="25.0" prefWidth="442.0" promptText="odaberite kategoriju artikla..." GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </ComboBox>
+         <Label layoutX="349.0" layoutY="246.0" text="Discount:" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+            <font>
+               <Font name="Georgia" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="popustNovogArtiklaTextField" promptText="unesite popust na artikl..." GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <GridPane.margin>
+               <Insets left="10.0" right="50.0" />
+            </GridPane.margin>
+         </TextField>
+      </children>
+   </GridPane>
+</AnchorPane>

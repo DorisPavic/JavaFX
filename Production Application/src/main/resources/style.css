@@ -1,0 +1,49 @@
+.root {
+    -fx-background-color: linear-gradient(
+            from 0% 0% to 100% 200%,
+            repeat,
+            #eaf5ef 0%,
+            #75b695 50%
+    );
+    -fx-font-family: "Georgia";
+}
+.label {
+    -fx-padding: -2px;
+    -fx-start-margin: 2px;
+    -fx-end-margin: 2px;
+}
+.combo-box .mark {
+    -fx-shape: "M2,0L5,4L8,0L10,0L10,2L6,5L10,8L10,10L8,10L5,6L2,10L0,10L0,8L4,5L0,2L0,0Z";
+}
+
+.combo-box:selected .mark {
+    -fx-background-color: #428c66;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#428c66, #75b695);
+}
+
+.menu:hover {
+    -fx-background-color: linear-gradient(#428c66, #75b695);
+}
+.menu:selected .mark {
+    -fx-background-color: #428c66;
+}
+.menu-item:selected .mark {
+    -fx-background-color: #428c66;
+}
+
+.menu-item:hover {
+    -fx-background-color: linear-gradient(#428c66, #75b695);
+}
+
+.table-view{
+    -fx-background-color: #96a89d;
+}
+.table-row-cell:odd{
+    -fx-background-color: #a4c7b2;
+}
+.table-row-cell:even{
+    -fx-background-color: #c9e3d2;
+}

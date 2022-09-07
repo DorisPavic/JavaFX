@@ -1,0 +1,3 @@
+namjestaj,drveni namještaj
+hrana,vegetarijanska hrana
+uređaji,elektronski uređaji

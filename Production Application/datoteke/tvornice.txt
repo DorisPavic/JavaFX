@@ -1,0 +1,3 @@
+Lidl;Zagrebačka;10;Zagreb;lenovo laptop,zobeno brasno
+Elipso;Domovinskog rata;20;Split;lenovo laptop
+Elipso;Vukovarska ulica;220;Zagreb;lenovo laptop
